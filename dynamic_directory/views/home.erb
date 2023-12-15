@@ -1,0 +1,19 @@
+<html>
+  <body>
+
+    <p>
+      <% if params[:sort] == "desc" %>
+        <a href="/">Sort ascending</a>
+      <% else %>
+        <a href="/?sort=desc">Sort descending</a>
+      <% end %>
+    </p>
+
+    <ul>
+      <% @file_list.each do |file| %>
+        <li><a href=<%= file %>><%= file %></a></li>
+      <% end %>
+    </ul>
+
+  </body>
+</html>

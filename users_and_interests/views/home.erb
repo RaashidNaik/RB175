@@ -1,0 +1,7 @@
+<h2>Username List</h2>
+<% @user_names.each do |user_name| %>
+  <p><a href="/users/<%= user_name.to_s %>"><%= user_name %></a></p>
+<% end %>
+<% @words.each do |word| %>
+  <% "<li>#{word}</li>" %>
+<% end %>

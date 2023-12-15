@@ -1,0 +1,8 @@
+<h4>User Name: <%= @user_name %></h2>
+<h4>E-mail: <%= @email %></h4>
+<h4>Interests: <%= @interests.join(', ') %></h4>
+<br>
+<% @user_names.each do |user_name| %>
+  <% next if user_name.to_s == @user_name %>
+  <p><a href="/users/<%= user_name.to_s %>"><%= user_name %></a></p>
+<% end %>

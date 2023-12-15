@@ -1,0 +1,6 @@
+source "https://rubygems.org"
+
+gem 'caxlsx'
+gem 'nokogiri'
+
+ruby "3.2.2"
